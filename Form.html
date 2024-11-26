@@ -1,0 +1,88 @@
+<head>
+    <link rel="stylesheet" href= "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Application</h1>
+    </header>
+    <main>
+        <p>Fill out the form:</p>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Basic information:</legend>
+                <label for="prenom id">Your name:</label>
+                <input type="text" name="prenom" id="prenom id" maxlength="12" autofocus required><br><br>
+                <label for="age id">Your age:</label>
+                <input type="number" name="age" id="age id" required><br><br>
+                <label for="email id">Your email:</label>
+                <input type="email" name="email" id="email id" required><br><br>
+                <label for="url id">Your web site:</label>
+                <input type="url" name="url" id="url id"><br><br>
+                <label for="date id">Your date of birth:</label>
+                <input type="date" name="date" id="date id"><br><br>
+                <label for="password id">Your password:</label>
+                <input type="password" name="password" id="password id"><br><br>
+
+                <p id="dropdownmenu">
+                    Which country are you from?<br><br>
+                    <select>
+                        <option value="Spain" selected>Spain</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="England">England</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Personal opinion:</legend>
+                <label for="slider_id">How strongly do you feel you liked this form:</label><br><br>
+                <p class="inlinetext">Not at all</p><input type="range" name="slider" id="slider_id" min="0" max="10" value="5"><p class="inlinetext">Very</p><br><br>
+    
+                <label for="essay id">Why do you apply?</label><br><br>
+                <textarea name="essay" id="essay id" rows="3">Write your own text...</textarea><br><br>
+    
+                <label for="search id">Need help? Ask a question:</label><br>
+                <input type="search" name="search" id="search id"><br><br>
+                <p id="checkbox">
+                    Where did you hear about this site?<br><br>
+                    <input type="checkbox" name="friend" id="friend_id" checked> <label for="friend_id">From a friend</label><br>
+                    <input type="checkbox" name="google" id="google_id"> <label for="google_id">Over google search</label><br>
+                    <input type="checkbox" name="other" id="other_id"> <label for="other_id">Other</label><br>
+                </p><br>
+    
+                <p id="radio">
+                    Which of these statements seem most accurate?<br><br>
+                    <input type="radio" name="statements" value="love" id="love_id" checked><label for="love_id">I love this web site!</label><br>
+                    <input type="radio" name="statements" value="like" id="like_id"><label for="like_id">I like this web site!</label><br>
+                    <input type="radio" name="statements" value="ok" id="ok_id"><label for="ok_id">This web site is ok!</label><br>
+                    <input type="radio" name="statements" value="not_like" id="not_like_id"><label for="not_like_id">I don't like this web site!</label><br>
+                    <input type="radio" name="statements" value="hate" id="hate_id"><label for="hate_id">I hate this web site!</label><br>
+                </p>
+            </fieldset>
+            <div id="submitblock">
+                <input type="reset" value="Reset Form" id="resetbutton">
+                <input type="submit" value="Submit" id="submitbutton">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <aside>
+
+    </aside>
+</body>
+

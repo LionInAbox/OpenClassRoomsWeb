@@ -1,0 +1,312 @@
+body{
+    background: linear-gradient(Aquamarine, Aqua);
+}
+
+p, a, h1, h2, h3, h4, h5, h6, label {
+    text-align: center;
+    display: block;
+    font-family:'Raleway';
+    color: Indigo;
+}
+
+a {
+    color: red;
+}
+a:hover {
+	text-decoration: underline;
+    text-decoration-style: wavy;
+    color: LightCoral;
+}
+a:active {
+    color: yellow;
+}
+
+h1 {
+    font-family:'DM Serif Display';
+    border: 4px dashed red;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: yellow;
+    color: DarkRed;
+}
+h2 {
+    border: 4px dotted yellow;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+
+h3 {
+    border: 4px solid Lavender;
+    background-color: Indigo;
+    color: Lavender;
+    border-radius: 34% 66% 100% 0% / 100% 68% 32% 0% ;
+}
+
+ul, ol {
+  display: inline-block;
+  text-align: left;
+  font-family:'Raleway';
+  color: DarkRed;
+}
+
+.list {
+    text-align: center;
+}
+
+#dog_pic {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#dog_pic:hover {
+    width:192;
+    height:263;
+}
+
+
+.image_block {
+    background-image: url("green back.jpg");
+}
+
+.image_block:hover{
+    opacity: 0.7;
+}
+.image_block:active{
+    opacity: 0.5;
+}
+.image_block:hover + #open_image{
+	text-decoration: underline;
+    text-decoration-style: wavy;
+    color: LightCoral;
+}
+.image_block:active + #open_image{
+    color: yellow;
+}
+
+#open_image {
+    padding: 30px;
+}
+
+.lastpassage {
+    font-size: 2em;
+}
+
+.you {
+    font-size: 2.4em;
+    color: black;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+aside {
+    padding:20px;
+}
+
+#sticky {
+    position: sticky;
+    top: 10px;
+    left: 90%;
+}
+#sticky_2 {
+    position: sticky;
+    top: 10px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+#odd {
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+
+#first {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+
+#right {
+    position: relative;
+    top: 30px;
+    left: -30px;
+}
+
+
+.gridding{
+    display:grid;
+    grid-template-columns: repeat(3, 250px);
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    width:500px;
+    padding: 50px;
+    place-items: center;
+}
+
+main{
+    text-align: center;
+}
+
+
+.one{
+    order: 0;
+}
+.two{
+    order: 3;
+}
+.three{
+    order:6;
+}
+.four{
+    order: 9;
+}
+.five{
+    order: 12;
+}
+.six{
+    order: 1;
+}
+.seven{
+    order: 4;
+}
+.eight{
+    order: 7;
+}
+.nine{
+    order: 10;
+}
+.ten{
+    order: 13;
+}
+.eleven{
+    order: 2;
+}
+.twelve{
+    order: 5;
+}
+.thirteen{
+    order: 8;
+}
+.fourteen{
+    order: 11;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin:auto;
+}
+td, th {
+    border: 3px solid black;
+}
+th {
+    color:white;
+    background-color: rgb(0,0,0,0.3);
+}
+.tablediv {
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap:10px;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#checkbox, label, #radio, #dropdownmenu{
+    text-align: left;
+    display: inline;
+}
+
+textarea{
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+
+fieldset {
+    border-radius: 5px;
+    font-family:'Raleway';
+    color: grey;
+    background: linear-gradient(Aqua, Aquamarine);
+    box-shadow:1.5px 1.2px 2.2px rgba(0, 0, 0, 0.053),
+  3.7px 2.9px 5.3px rgba(0, 0, 0, 0.077),
+  7px 5.5px 10px rgba(0, 0, 0, 0.09),
+  12.5px 9.8px 17.9px rgba(0, 0, 0, 0.097),
+  23.4px 18.4px 33.4px rgba(0, 0, 0, 0.1),
+  56px 44px 80px rgba(0, 0, 0, 0.1);
+}
+
+legend{
+    color: black;
+}
+
+#slider_id{
+    display: inline;
+}
+
+.inlinetext{
+    display: inline;
+    padding: 10px;
+    font-size: small;
+}
+
+#submitbutton{
+    width: 60px;
+    background-color: rgb(117, 225, 255);
+    font-weight: bold;
+}
+#resetbutton{
+    width: 90px;
+    background-color: rgb(147, 225, 255);
+}
+#submitbutton:hover, #resetbutton:hover{
+    cursor: pointer;
+    background-color: rgb(192, 250, 255);
+}
+#submitbutton:active, #resetbutton:active{
+    background-color: rgb(0, 179, 255);
+}
+#submitblock{
+    text-align: center;
+    padding-block-start: 50px;
+}
+
+@media screen and (max-width: 700px){
+    p{
+        color:red;
+    }
+    #sticky{
+        display: none;
+    }
+    #sticky_2{
+        display: none;
+    }
+    .flexbox {
+        display: none;
+    }
+    .gridding{
+        grid-template-columns: 100px;
+        width:100px;
+        margin: auto;
+    }
+}
